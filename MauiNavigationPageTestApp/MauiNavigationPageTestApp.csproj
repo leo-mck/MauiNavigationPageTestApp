@@ -56,6 +56,7 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.7" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.7" />
@@ -63,12 +64,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="BasePage.xaml.cs">
+	    <DependentUpon>BasePage.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="OtherPage.xaml.cs">
 	    <DependentUpon>OtherPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="BasePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="OtherPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

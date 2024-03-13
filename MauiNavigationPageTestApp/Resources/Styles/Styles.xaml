@@ -423,4 +423,24 @@
         <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
     </Style>
 
+
+
+
+
+    <ControlTemplate x:Key="TealTemplate">
+        <Grid RowDefinitions="Auto,*,Auto">
+            
+            <BoxView Color="{StaticResource Tertiary}" HeightRequest="50"/>
+            <Label Text="{TemplateBinding Title}"
+                           TextColor="White"
+                           VerticalOptions="Center"  />
+            <ContentPresenter  Grid.Row="1"/>
+            <BoxView Color="Teal"  Grid.Row="2"/>
+            <Label Text="(c) Xamarin 2016" Grid.Row="2"
+                           TextColor="White"
+                           VerticalOptions="Center" HorizontalOptions="Center" />
+        </Grid>
+    </ControlTemplate>
+    
+
 </ResourceDictionary>

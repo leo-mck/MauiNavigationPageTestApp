@@ -2,20 +2,20 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiNavigationPageTestApp.MainPage"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False" BackgroundColor="DarkGray">
 
   
 
        
 
-        <ScrollView Grid.Row="1" BackgroundColor="White">
+        <ScrollView Grid.Row="1">
             <VerticalStackLayout
             Padding="0,0" Margin="0"
             Spacing="25">
 
-            <Border BackgroundColor="Black" HeightRequest="150" HorizontalOptions="Fill"></Border>
-                
-                <Image
+            <Border BackgroundColor="Black" HeightRequest="150" HorizontalOptions="Fill" StrokeThickness="0"/>
+
+            <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
@@ -34,7 +34,7 @@
 
                 <Button
                 x:Name="CounterBtn"
-                Text="Click me" 
+                Text="Navigate" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" Margin="25,0"/>

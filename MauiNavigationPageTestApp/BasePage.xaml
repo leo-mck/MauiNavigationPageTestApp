@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="MauiNavigationPageTestApp.BasePage" Title="BasePage">
+
+    <!--<ContentPage.ControlTemplate>
+        <ControlTemplate>
+            <Grid RowDefinitions="50,*">
+                <BoxView Color="{StaticResource Tertiary}" />
+                <Label Text="{TemplateBinding Title}" TextColor="White" VerticalOptions="Center" />
+                <ContentPresenter Grid.Row="1"/>
+            </Grid>
+        </ControlTemplate>
+    </ContentPage.ControlTemplate>-->
+
+
+
+</ContentPage>

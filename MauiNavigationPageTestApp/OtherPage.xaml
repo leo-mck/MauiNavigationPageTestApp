@@ -1,18 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<controls:BasePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiNavigationPageTestApp.OtherPage" Title="OtherPage">
+                xmlns:controls="clr-namespace:MauiNavigationPageTestApp"
+             NavigationPage.HasNavigationBar="True"
+             x:Class="MauiNavigationPageTestApp.OtherPage" Title="OtherPage" BackgroundColor="#3a3a3a">
 
-    <ContentPage.Resources>
+    <controls:BasePage.Resources>
         
             <Style TargetType="Border">
-                <Setter Property="WidthRequest" Value="20" />
-                <Setter Property="HeightRequest" Value="20" />
+                <Setter Property="WidthRequest" Value="50" />
+                <Setter Property="HeightRequest" Value="50" />
                 <Setter Property="BackgroundColor" Value="CornflowerBlue" />
                 <Setter Property="Margin" Value="0" />
             </Style>
         
-    </ContentPage.Resources>
+    </controls:BasePage.Resources>
+    
+    
     <ScrollView>
 
         <FlexLayout Wrap="Wrap" AlignContent="Start" AlignItems="Start">
@@ -31,89 +35,9 @@
             <Border />
             <Border />
             <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
-            <Border />
+
         </FlexLayout>
         
     </ScrollView>
 
-</ContentPage>
+</controls:BasePage>

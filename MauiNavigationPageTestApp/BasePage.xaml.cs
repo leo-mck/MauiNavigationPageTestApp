@@ -1,10 +1,10 @@
 ﻿namespace MauiNavigationPageTestApp
 {
-    public partial class OtherPage : BasePage
+    public partial class BasePage : ContentPage
     {
         int count = 0;
 
-        public OtherPage()
+        public BasePage()
         {
             InitializeComponent();
         }
